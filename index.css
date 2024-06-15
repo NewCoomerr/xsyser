@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+
+}
+
+:root{
+    
+    /* // <uniquifier>: Use a unique and descriptive class name
+   // <weight>: Use a value from 200 to 1000 */
+
+
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200,300,400,500,600,700,800,900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+
+    --primary-color: #0D8040;
+    --secondary-color:  #626463;
+
+
+    --color-accents: #ffffff;
+
+    --letter-spacing: 0.5px;
+
+}
+
+
+
+
+
+.header{
+    width: 90%;
+    
+    background-color: #F3F3F3;
+    border: 1px solid #f3f3f3;
+    margin: auto;
+    margin-top: 1px;
+    display: flex;
+    border-bottom-left-radius:  0.5em;
+    border-bottom-right-radius:  0.5em;
+    border-bottom: 0.5px solid green ;
+    
+}
+
+.header img{
+    width: 10%;
+    object-fit: contain;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    
+}
+
+
+.header button{
+    border: 1px solid #008000;
+    background: #008000 ;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1px;
+}
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .toggle, [id^=dropdown] {
+    display: none;
+   }
+  nav ul{
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;   
+    position: relative;
+  }
+  nav ul li {
+    margin: 0;
+    display: inline-block;
+   
+  }
+
+  nav a {
+    display: block;     
+    color: black; 
+    text-decoration: none;
+  }
+
+  nav ul ul{
+    display: none;
+  }
+
+  nav ul  li:hover > ul{
+    display: inherit;
+
+  }
+
+  nav ul ul li{
+    width: 170px;
+    float: none ;
+    top: -60px;
+    left: 170px;
+  }
+
+  li > a:after { content: ' +'; }
+
+  li > a:only-child:after { content: ' '; }
+
+
