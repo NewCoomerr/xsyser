@@ -13,7 +13,7 @@
     <section>
         <div class="container">
             <div class="header">
-                <img class="images" src="./images/xsyser-log-compreseesd.png"  style=" width: 10%;
+                <img class="images" src="./images/xsyser-log-compreseesd.png"  style=" width: 15%;
     object-fit: contain;"  alt="">
                  <nav class="nav">
                     <ul>
@@ -79,7 +79,7 @@
 
             <div class="containers">
                 <ul class="slider">
-                    <li style="list-style: none;" class="slider-one">
+                    <li style="list-style: none;" class="slider-one carasoul">
                         <div class="slider-container one">
                             
                             <h1>Build Skills With Xsyser</h1>
@@ -90,7 +90,7 @@
                         </div>
                         <img src="images/overview-img1.png" alt="" height="50px" width="44px">
                     </li>
-                    <li style="list-style: none;" class="slider-two">
+                    <li style="list-style: none;" class="slider-two carasoul">
                         <div class="slider-container two">
                            
                             <h1>Ultrafast & Secure Web Hosting </h1>
@@ -100,7 +100,7 @@
                         </div>
                         <img src="images/hosting-server.png" alt="" height="50px" width="44px" >
                     </li>
-                    <li style="list-style: none;" class="slider-three">
+                    <li style="list-style: none;" class="slider-three carasoul">
                         <div class="slider-container three">
                            
                             <h1>A Holistic Web Development & Digital Marketing Agency <br/>
@@ -111,20 +111,46 @@
                         </div>
                         <img src="images/web-development-gif.gif" alt="" height="50px" width="44px">
                     </li>
+                    
+
                 </ul>
+                    <button  class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
         </div>
     </section>
 </body>
 <script>
 
   
-    const slider = new A11YSlider(document.querySelector(".slider"), {
-  autoplay: true,
-  arrows: true,
+//     const slider = new A11YSlider(document.querySelector(".slider"), {
+//   autoplay: true,
+//   arrows: true,
    
-  autoplaySpeed: 500,
-  swipe:true
-});
+//   autoplaySpeed: 500,
+//   swipe:true
+// });
+
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("carasoul");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+   
+}
+
 </script>
 
 
