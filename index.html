@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
  <!-- slider link -->
  <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+ <link rel="script" href="main.js">
 </head>
 <body>
     <section>
@@ -20,52 +21,55 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About Us</a></li>
                         <li>
-                             <label for="dropdown" class="toggle" > Training +  </label>
-                            <a href="#">Training</a>
+                             <label for="dropdown" class="toggle" > Training  </label>
+                            <a href="#">Training </a>
                             <input type="checkbox" id="dropdown">
-                            <li>
-                                <label for="dropdown" class="toggle" > Os Admin +  </label>
-                                <a href="#">Os Admin</a>
-                                <input type="checkbox" id="dropdown">
-
-                               <ul class="first">
-                                   <li> <a href="#linux">Linux Administration</a></li>
-                                   <li> <a href="#aws">AWS</a></li>
-                                   <li> <a href="#devops">DEVOPS</a></li>
-                                 </ul>
-                                 <ul>
-                             </li>
-                             <li>
-                                <label for="dropdown" class="toggle"> Programming Languages + </label>
-                                <a href="#">Programming Languages</a>
-                                <input type="checkbox" id="dropdown">
-                                <ul class="second">
-                                   <li><a href="#">C,C++</a></li>
-                                   <li><a href="#">JAVA</a></li>
-                                   <li><a href="#">PYTHON</a></li>
-                                   <li><a href="#">.NET</a></li>
-                                   <li><a href="#">PHP MY-SQL</a></li>
-                                   <li><a href="#">.NET MS SQL</a></li>
-                                   <li><a href="#">HTML5</a></li>
-                                   <li><a href="#"> CSS,JS, JQ</a></li>
-                                   <li><a href="#">SQL PSQL</a></li>
-                                   <li><a href="#">ANGULAR</a></li>
-                                   <li><a href="#">DJANGO</a></li>
-                                   <li><a href="#">A.I</a></li>
-                                 </ul>
-                             </li>
-                             <li>
-                                <label for="dropdown" class="toggle" > Fullstack + </label>
-                                <a href="#">Fullstack</a>
-                                <input type="checkbox" id="dropdown">
-                                 <ul class="third">
-                                   <li><a href="#">Fullstack Python</a> </li>
-                                   <li><a href="#">Fullstack Java</a> </li>
-                                   <li><a href="#">Fullstack ASP</a> </li>
-                                   <li><a href="#">Fullstack .net</a> </li>
-                                   <li><a href="#">Fullstack PHP </a> </li>
-                                 </ul>
-                             </li>
+                            <ul>
+                                
+                                <li>
+                                    <label for="dropdown" class="toggle" > Os Admin </label>
+                                    <a href="#">Os Admin</a>
+                                    <input type="checkbox" id="dropdown">
+                                    
+                                   <ul class="first">
+                                       <li> <a href="#linux">Linux Administration</a></li>
+                                       <li> <a href="#aws">AWS</a></li>
+                                       <li> <a href="#devops">DEVOPS</a></li>
+                                     </ul>
+                                     <ul> 
+                                 </li>
+                                 <li>
+                                    <label for="dropdown" class="toggle"> Programming Languages + </label>
+                                    <a href="#">Programming Languages</a>
+                                    <input type="checkbox" id="dropdown">
+                                    <ul class="second">
+                                       <li><a href="#">C,C++</a></li>
+                                       <li><a href="#">JAVA</a></li>
+                                       <li><a href="#">PYTHON</a></li>
+                                       <li><a href="#">.NET</a></li>
+                                       <li><a href="#">PHP MY-SQL</a></li>
+                                       <li><a href="#">.NET MS SQL</a></li>
+                                       <li><a href="#">HTML5</a></li>
+                                       <li><a href="#"> CSS,JS, JQ</a></li>
+                                       <li><a href="#">SQL PSQL</a></li>
+                                       <li><a href="#">ANGULAR</a></li>
+                                       <li><a href="#">DJANGO</a></li>
+                                       <li><a href="#">A.I</a></li>
+                                     </ul>
+                                 </li>
+                                 <li>
+                                    <label for="dropdown" class="toggle" > Fullstack + </label>
+                                    <a href="#">Fullstack</a>
+                                    <input type="checkbox" id="dropdown">
+                                     <ul class="third">
+                                       <li><a href="#">Fullstack Python</a> </li>
+                                       <li><a href="#">Fullstack Java</a> </li>
+                                       <li><a href="#">Fullstack ASP</a> </li>
+                                       <li><a href="#">Fullstack .net</a> </li>
+                                       <li><a href="#">Fullstack PHP </a> </li>
+                                     </ul>
+                                 </li>
+                            </ul>
                         </li>
 
 
@@ -119,93 +123,11 @@
         </div>
     </section>
 </body>
-<script>
-
-  
-//     const slider = new A11YSlider(document.querySelector(".slider"), {
-//   autoplay: true,
-//   arrows: true,
-   
-//   autoplaySpeed: 500,
-//   swipe:true
-// });
 
 
-
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("carasoul");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-   
-}
-
-</script>
-
-
-<!--  -->
 </html>
 
 
 
 
 
-
-
-
-<!-- <a href="#home">Home</a>
-                    <a href="#Aboutus">About Us</a>
-                    <div class="subnav">
-                         <button class="subnavbtn">Training <i class="fa fa-caret-down"></i></button>
-                        <div class="subnav-content">
-                            <div class="subnav">
-                                <button class="subnavbtn">Os Admin <i class="fa fa-caret-down"></i></button>
-                                <div class="subnav-content">
-                                    <a href="#linux">Linux Administration</a>
-                                    <a href="#aws">AWS</a>
-                                    <a href="#devops">DEVOPS</a>
-                                </div>
-                            </div>
-                            <div class="subnav">
-                                <button class="subnavbtn">Programming Languages <i class="fa fa-caret-down"></i></button>
-                                <div class="subnav-content">
-                                    <a href="#">C,C++</a>
-                                    <a href="#">JAVA</a>
-                                    <a href="#">PYTHON</a>
-                                    <a href="#">.NET</a>
-                                    <a href="#">PHP MY-SQL</a>
-                                    <a href="#">.NET MS SQL</a>
-                                    <a href="#">HTML5</a>
-                                    <a href="#"> CSS,JS, JQ</a>
-                                    <a href="#">SQL PSQL</a>
-                                    <a href="#">ANGULAR</a>
-                                    <a href="#">DJANGO</a>
-                                    <a href="#">A.I</a>
-                                </div>
-                            </div>
-                            <div class="subnav">
-                                <button class="subnavbtn">Fullstack <i class="fa fa-caret-down"></i></button>
-                                <div class="subnav-content">
-                                    <a href="#">Fullstack Python</a>
-                                    <a href="#">Fullstack Java</a>
-                                    <a href="#">Fullstack ASP</a>
-                                    <a href="#">Fullstack .net</a>
-                                    <a href="#">Fullstack PHP </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <a href="#refund">Refund Policy</a>
-                    <a href="#contact">Contact</a> -->
