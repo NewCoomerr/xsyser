@@ -130,23 +130,34 @@ nav:after {
     text-decoration: none;
   }
 
+  nav li a:hover {
+    color: #0D8040;
+    /* margin-top: -10px; */
+  }
+
   nav ul ul{
     display: none;
   }
 
-  nav ul  li:hover > ul{
+  nav ul  li:hover > ul  {
     display: inherit;
 
   }
 
-  nav ul ul li{
-    width: 170px;
+  nav ul ul  li{
+    width: auto;
+    font-size: 0.2rem;
+    font-weight: 400;
+    padding: 0.2em;
     float: none ;
     top: -60px;
     left: 170px;
+    background: #008000;
+    display: list-item;
+    
   }
 
-  li > a:after { content: ' +'; }
+  li > a:after { content: ' '; }
 
   li > a:only-child:after { content: ' '; }
 
@@ -175,6 +186,26 @@ nav:after {
     
   }
 
+  .slider-container h1{
+    font-size: 1rem;
+  }
+  .slider-container p{
+    font-size: 0.5rem;
+    font-weight: 100;
+    margin-top: 1em;
+  }
+
+  .slider-container button{
+    font-size: 0.5rem;
+    padding: 1%;
+    font-weight: bold;
+    color: white;
+    background: #0D8040;
+    border-color: #0D8040;
+    border-radius: 0.5em;
+    margin-top: 1em;
+  }
+
   .slider-one{
     display: flex;
     flex-direction: column ;
@@ -195,14 +226,32 @@ nav:after {
   .w3-display-left{
     padding: 10px;
      display:inline;
+     background-color: rgb(90, 88, 88) ;
+     color: white ;
+     border-radius: 50%;
+     
     
     
   }
+
+  .w3-display-left:hover{
+    background: black ;
+  }
+
+
   .w3-display-right{
     padding: 10px;
     display:inline;
+    background-color: rgb(90, 88, 88)  ;
+     color: white ;
+     border-radius: 50%;
+    opacity: 10px;
+  }
+  .w3-display-right:hover{
+    background-color: black !important;
   }
 
   .carasoul img{
-    align-items: end;
+        
+     
   }
