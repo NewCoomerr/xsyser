@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <title>Xsyser </title>
     <link rel="stylesheet" href="index.css">
@@ -7,34 +8,32 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
  <!-- slider link -->
- <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
-<script src="main.js"></script>
+
 </head>
 <body>
     <section>
         <div class="container">
             <div class="header">
-                <img class="images" src="./images/xsyser-log-compreseesd.png"  style=" width: 15%;
-    object-fit: contain;"  alt="">
+                <img class="images" src="./images/xsyser-log-compreseesd.png"  style=" width: 15%; object-fit: contain;"  alt="">
                  <nav class="nav">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About Us</a></li>
-                        <li>
+                        <li id="down">
                              <label for="dropdown" class="toggle" > Training  </label>
                             <a href="#">Training </a>
                             <input type="checkbox" id="dropdown">
-                            <ul>
+                            <ul id="one">
                                 
                                 <li>
                                     <label for="dropdown" class="toggle" > Os Admin </label>
                                     <a href="#">Os Admin</a>
                                     <input type="checkbox" id="dropdown">
                                     
-                                   <ul class="first">
-                                       <li> <a href="#linux">Linux Administration</a></li>
+                                   <ul class="first one" id="one">
+                                       <!-- <li> <a href="#linux">Linux Administration</a></li>
                                        <li> <a href="#aws">AWS</a></li>
-                                       <li> <a href="#devops">DEVOPS</a></li>
+                                       <li> <a href="#devops">DEVOPS</a></li> -->
                                      </ul>
                                      <ul> 
                                  </li>
@@ -42,8 +41,8 @@
                                     <label for="dropdown" class="toggle"> Programming Languages + </label>
                                     <a href="#">Programming Languages</a>
                                     <input type="checkbox" id="dropdown">
-                                    <ul class="second">
-                                       <li><a href="#">C,C++</a></li>
+                                    <ul class="second one" id="one">
+                                       <!-- <li><a href="#">C,C++</a></li>
                                        <li><a href="#">JAVA</a></li>
                                        <li><a href="#">PYTHON</a></li>
                                        <li><a href="#">.NET</a></li>
@@ -54,19 +53,19 @@
                                        <li><a href="#">SQL PSQL</a></li>
                                        <li><a href="#">ANGULAR</a></li>
                                        <li><a href="#">DJANGO</a></li>
-                                       <li><a href="#">A.I</a></li>
+                                       <li><a href="#">A.I</a></li> -->
                                      </ul>
                                  </li>
                                  <li>
                                     <label for="dropdown" class="toggle" > Fullstack + </label>
                                     <a href="#">Fullstack</a>
                                     <input type="checkbox" id="dropdown">
-                                     <ul class="third">
-                                       <li><a href="#">Fullstack Python</a> </li>
+                                     <ul class="third one" id="one">
+                                       <!-- <li><a href="#">Fullstack Python</a> </li>
                                        <li><a href="#">Fullstack Java</a> </li>
                                        <li><a href="#">Fullstack ASP</a> </li>
                                        <li><a href="#">Fullstack .net</a> </li>
-                                       <li><a href="#">Fullstack PHP </a> </li>
+                                       <li><a href="#">Fullstack PHP </a> </li> -->
                                      </ul>
                                  </li>
                             </ul>
@@ -121,7 +120,9 @@
                     <button  class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                     <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
         </div>
+    </div>
     </section>
+    <script src="main.js"></script>
 </body>
  
 
