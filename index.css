@@ -149,6 +149,10 @@ nav::after{
     display: none;
   }
 
+  nav #down:hover  #dropdown{
+    display: block;
+  }
+
   /* #down:hover #drop  ul{
     display: block;
   } */
