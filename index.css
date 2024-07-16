@@ -1,6 +1,232 @@
 *{
     margin: 0;
     padding: 0;
+}
+
+
+.nav-section{
+    position: absolute;
+    display: flex;
+    width: 90%;
+    height: 90px;
+    background-color:#F3F3F3;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 4px solid green;
+}
+h1 img{
+  margin-left:20px ;
+  margin-top: 10px;
+}
+
+
+.nav-section ul{
+  list-style: none;
+  display: flex;
+}
+
+.nav-section ul li{
+  padding: 10px 30px;
+  position: relative;
+}
+
+.nav-section ul li a{
+  color:black;  
+  text-decoration: none;
+  font-size: 20px;
+  font-weight:500;
+}
+
+
+.nav-section ul li a:hover{
+  color: green;   
+}
+
+
+.nav-section button{
+  height: 40px;
+  width: 90px;
+  padding: 4px;
+  font-size: 18px;
+  background-color: green;
+  border: 1px solid green; 
+  border-radius: 5px; 
+  color: white;
+  margin-right: 50px;
+}
+
+ .checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+ }
+ #check{
+  display: none;
+ }
+ 
+ @media (max-width: 425px){
+  h1 img{
+    display: none;
+  }
+  
+  .nav-section ul li{
+  display: none;
+}
+.checkbtn{
+  display: block;
+}
+ 
+ }
+ 
+ @media (max-width: 767px){
+  h1 img{
+    display: none;
+  }
+  
+  .nav-section ul li{
+  display: none;
+}
+ 
+ }
+
+.dropdown__menu{
+  display: none;
+}
+
+.nav-section ul li:hover .dropdown__menu{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: green;
+ 
+ 
+}
+.nav-section ul li:hover .dropdown__menu ul{
+  display: block;
+  margin: 10px 0 0;
+}
+ 
+
+.nav-section ul li:hover .dropdown__menu ul li{
+  width: 250px;
+  padding: 10px;
+  margin-left: 30px;
+ 
+}
+.nav-section ul li:hover .dropdown__menu ul li a{
+  color: beige;
+}
+.fas{
+  float: right;
+  margin-right: 30px;
+  padding-top: 2px;
+   
+}
+
+.dropdown__menu-1{
+  display: none;
+}
+.dropdown__menu ul li:hover .dropdown__menu-1{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 275px;
+  background-color: green;
+  text-transform: uppercase;
+}
+
+
+
+
+
+.slider-section{
+  position: relative;
+  background-color: red;
+  width: 100%;
+  height: 500px;
+  animation: myanimation 10s infinite;
+}
+@keyframes myanimation {
+    0% {background-color: #EF9C66;}
+    25%{background-color:#FFD0D0;}
+    50%{background-color:#FCDC94;}
+    75%{background-color:#91DDCF;}
+    100%{background-color:#AD88C6}
+ 
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
   
 
 }
@@ -11,7 +237,7 @@
     /* // <uniquifier>: Use a unique and descriptive class name
    // <weight>: Use a value from 200 to 1000 */
 
-
+/* 
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200,500,600;
@@ -35,6 +261,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
      
     animation: myanimation 10s infinite;
 }
@@ -51,11 +278,11 @@
 
 .header{
     width: 92%;
-    height: 130px;
+    height: 100px;
     background-color: #F3F3F3;
     border: 1px solid #f3f3f3;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 5px;
     display: flex;
     border-bottom-left-radius:  20px;
     border-bottom-right-radius:  20px;
@@ -133,7 +360,7 @@ nav::after{
     float: bottom;
     list-style: none;
     position: relative;
-}
+} */
 /* nav ul ul{
     display: none;
     position: absolute;
@@ -145,13 +372,21 @@ nav::after{
     display: flex;
 }
   */
- nav #down  #dropdown{
+ /* nav #down  #dropdown{
     display: none;
   }
 
   nav #down:hover  #dropdown{
     display: block;
   }
+      
+
+  nav #down #dropdown::after{
+    content: " ";
+    display: table;
+    clear: right;
+} */
+
 
   /* #down:hover #drop  ul{
     display: block;
@@ -187,7 +422,7 @@ nav::after{
     margin: 1px;
     
   }
-
+/* 
    
 
   nav a {
@@ -231,11 +466,11 @@ nav::after{
 
 
 
-
+/* 
 
 
   /* Slider Containers */
-  .slider {
+  /* .slider {
     display: flex;
     
   }
@@ -319,5 +554,5 @@ nav::after{
 
   .carasoul img{
 
-     
-  }
+      */
+  /* }  */
