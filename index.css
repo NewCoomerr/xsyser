@@ -76,10 +76,12 @@ h1 img{
  @media (max-width: 425px){
   h1 img{
     display: none;
+    background-color: black;
   }
   
   .nav-section ul li{
   display: none;
+  background-color: #fff;
 }
 .checkbtn{
   display: block;
@@ -90,10 +92,12 @@ h1 img{
  @media (max-width: 767px){
   h1 img{
     display: none;
+    background-color: black;
   }
   
   .nav-section ul li{
   display: none;
+  background-color: red;
 }
  
  }
