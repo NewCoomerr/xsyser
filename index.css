@@ -72,34 +72,74 @@ h1 img{
  #check{
   display: none;
  }
- 
- @media (max-width: 425px){
-  h1 img{
-    display: none;
-    background-color: black;
-  }
   
-  .nav-section ul li{
-  display: none;
-  background-color: #fff;
-}
-.checkbtn{
-  display: block;
-}
- 
- }
- 
  @media (max-width: 767px){
-  h1 img{
-    display: none;
-    background-color: black;
+   .logo{
+    margin: 40px;
   }
+  .nav-section{
+    margin-top: 50px;
+    width: 100%;
+    background-color: white ;
+    margin: auto;
+    border-bottom: 0px;
+    border-radius: 0px;
+    box-shadow: 1px  black ;
+     
+  }
+  .checkbtn{
+    display: block;
+    margin-right: 100px;
+    
+  }   
   
-  .nav-section ul li{
-  display: none;
-  background-color: red;
-}
  
+  .nav-section  ul { 
+    position:fixed;
+    width: 90%;
+    height: 40vh;
+    background: white ;
+    top: 90px;
+    left: 35px;
+    text-align: left;
+    transition: all .5s;
+   
+  } 
+ 
+  .nav-section ul {
+    display: list-item ;
+  
+
+  }
+
+  .nav-section ul li a{
+    font-size: 20px ;
+    font-weight: lighter;
+    padding: 10px 0px ;
+  }
+  a:hover,a.active{
+    background-color: none;
+  }
+  #check:checked ~  ul{
+    left: 0;
+  } 
+
+  .nav{
+    display: none;
+  }
+  .login-btn{
+    display: none;
+  }
+
+
+
+ 
+
+
+
+      
+
+   
  }
 
 .dropdown__menu{
